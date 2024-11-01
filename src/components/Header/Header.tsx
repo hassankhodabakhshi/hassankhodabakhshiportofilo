@@ -2,7 +2,8 @@ import { Container } from './styles'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
-import Resume from '../../assets/Vinayak_Kumar_Singh_Resume.pdf'
+import Resume from '../../assets/hassankhodabakhshi_Resume.pdf'
+//import { NavLink } from 'react-router-dom';
 export function Header() {
   const [isActive, setActive] = useState(false)
   function toggleTheme() {
@@ -16,8 +17,8 @@ export function Header() {
     <Container className="header-fixed">
       <Router>
         <HashLink smooth to="#home" className="logo">
-          <span>{"<Vinayak "}</span>
-          <span>{" Singh/>"}</span>
+          <span>{"<iso "}</span>
+          <span>{"network/>"}</span>
         </HashLink>
         <input
           onChange={toggleTheme}
@@ -29,20 +30,22 @@ export function Header() {
         <label htmlFor="switch">Toggle</label>
         <nav className={isActive ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
-            Home
+            صفحه اصلی
           </NavHashLink>
           <NavHashLink smooth to="#about" onClick={closeMenu}>
-            About me
+            درباره من
           </NavHashLink>
           <NavHashLink smooth to="#project" onClick={closeMenu}>
-            Project
+            پروژه ها
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
-            Contact
+            ارتباط با من
           </NavHashLink>
-          <a href={Resume} download className="button">
-            Resume
-          </a>
+          <a href="https://blog.isonetwork.ir" target="_blank" rel="noopener noreferrer"> وبلاگ</a>
+          <a href={Resume} target="_blank" rel="noopener noreferrer" className="button">
+    رزومه من
+  </a>
+
         </nav>
         <div
           aria-expanded={isActive ? 'true' : 'false'}

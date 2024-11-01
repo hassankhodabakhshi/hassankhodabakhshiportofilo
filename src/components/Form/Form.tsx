@@ -31,13 +31,13 @@ export function Form() {
   if (state.succeeded) {
     return (
       <ContainerSucces>
-        <h3>Thanks for getting in touch!</h3>
+        <h3>با تشکر برای تماس</h3>
         <button
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
         >
-          Back to the top
+          بازگشت به بالا
         </button>
         <ToastContainer />
       </ContainerSucces>
@@ -45,7 +45,7 @@ export function Form() {
   }
   return (
     <Container>
-      <h2>Get in touch using the form</h2>
+      <h2>با استفاده از فرم تماس بگیرید</h2>
       <form onSubmit={handleSubmit}>
         <input
           placeholder="Email"
@@ -73,7 +73,7 @@ export function Form() {
           errors={state.errors}
         />
         <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
+          sitekey="6LdME3EqAAAAAPLCu5h50DhXAAIkOCWnqu47NF1J"
           onChange={(e) => {
             setIsHuman(true)
           }}
@@ -82,7 +82,7 @@ export function Form() {
           type="submit"
           disabled={state.submitting || !validEmail || !message || !isHuman}
         >
-          Submit
+          ارسال
         </button>
       </form>
       <ToastContainer />

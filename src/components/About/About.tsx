@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import VinayakSingh from "../../assets/VinayakSingh.png";
+import VinayakSingh from "../../assets/hassankhodabakhshi.png";
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -17,23 +17,29 @@ export function About() {
     <Container id="about">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
-          <h2>About me</h2>
+          <h2>درباره من</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Vinayak, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and React, I have the tools to bring any website vision to life.
+          حسن خدابخشی توسعه دهنده و طراح وب با تجربه در ایجاد و بهینه سازی وب سایت. مسلط به زبان های برنامه نویسی مانند جاوا اسکریپت، پایتون
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-            But my services go beyond just custom development - I'm also proficient in using CMS systems like WordPress and Shopify, making it easy for my clients to take control of their own websites and keep them up to date.</p>
+          تکنسین کامپیوتر و توسعهدهنده
+وب با تجربه در اسمبل کیس،
+فروش قطعات کامپیوتر و ساخت
+سایتهای وردپرسی. دارای مهارت
+در بهینه سازی SEO و مدیریت
+پروژههای آنالین و توانایی آنالیز
+امنیت سایتها</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            So if you're in need of a new website or just looking to revamp your current online presence, I'd love to chat and see how I can help. Let's bring your website dreams to reality together!</p>
+          بنابراین اگر به یک وب سایت جدید نیاز دارید یا فقط به دنبال اصلاح حضور آنلاین فعلی خود هستید، دوست دارم چت کنم و ببینم چگونه می توانم کمک کنم. بیایید رویاهای وب سایت شما را با هم به واقعیت تبدیل کنیم</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h3>Here are my main skills:</h3>
+          <h3>در اینجا مهارت های اصلی من وجود دارد</h3>
         </ScrollAnimation>
         <div className="hard-skills">
           <div className="hability">
@@ -90,7 +96,7 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-          <img src={VinayakSingh} alt="Vinayak Singh" />
+          <img src={VinayakSingh} alt="hassan khodabakhshih" />
         </ScrollAnimation>
       </div>
     </Container>
